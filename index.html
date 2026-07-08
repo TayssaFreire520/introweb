@@ -29,6 +29,7 @@
             <li>Acessórios</li>
           </ul>
         </aside>
+          <br/>
         <!--Tabela de produtos-->
         <section class="product-list">
           <h3>Lista de Produtos</h3>
@@ -60,7 +61,7 @@
             </tbody>
           </table>
         </section>
-        
+
         <article>
           <h3>Notebook</h3>
           <p>Detalhes do Notebook</p>
@@ -70,10 +71,100 @@
           <p>Detalhes do Teclado</p>
         </article>
       </section>
-      <section class="contact" id="contato">
-        <h2>Contato</h2>
-        <p>Email: contato@minhaloja.com</p>
+      <br/>
+
+      <!--Formulário-->
+      <fieldset>
+        <legend>Cadastro</legend>
+      <br id="contato">
+        <h2>Cadastro/ Contato</h2>
+        <label for="nome">Nome</label><br />
+        <input
+          type="text"
+          name="nome"
+          id="nome"
+          placeholder="Digite o seu nome"
+          required
+          minlength="3">
+          <br>
+        <label for="email">Email</label><br />
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Digite o seu email"
+          required
+          minlength="3">
+          <br>
+        <label for="senha">Senha</label><br />
+        <input
+          type="password"
+          name="senha"
+          id="senha"
+          placeholder="Informe a senha"
+          minlength="8">
+          <br />
+      <label for="idade">Idade</label><br />
+      <input
+        type="number"
+        name="idade"
+        id="idade"
+        placeholder="Informe sua idade"
+        min="18"
+        max="120">
+        <br>
+        <label for="genero">Selecione o gênero</label><br>
+        <select name="category" id="input-category">
+        <option value="">Selecione...</option>
+        <option value="moda">F</option>
+        <option value="casa">M</option>
+      </select>
+
       </section>
+      </fieldset>
+      <br /><br />
+      <fieldset>
+        <legend></legend>
+        <input type="radio" name="client-type" id="radio-pf" value="pf" />
+        <label for="radio-pf">Pessoa Física</label>
+        <br />
+        <input type="radio" name="client-type" id="radio-pj" value="pj" />
+        <label for="radio-pj">Pessoa Jurídica</label>
+      </fieldset>
+      <br/> <br/>
+      <fieldset>
+        <input
+          type="checkbox"
+          name="preferences"
+          id="check-offers"
+          value="offers"
+        />
+
+        <label for="check-offers">Receber ofertas</label><br />
+        <input
+          type="checkbox"
+          name="preferences"
+          id="check-newsletter"
+          value="newsletter"
+        />
+        <label for="check-newsletter">Newsletter</label><br />
+        <input type="checkbox" name="preferences" id="check-sup" value="sup" />
+        <label for="sup">Suporte</label>
+      </fieldset>
+      <br/> <br/>
+      <label for="feedback">Deixe seu Comentário</label><br>
+      <textarea id="comentario" name="comentario" rows="4" cols="30" maxlength="150" placeholder="Insira texto aqui:"></textarea>
+      <br/><br/>
+
+      <input type="submit" value="Enviar" />
+
+      <!--conversa com cliente-->
+      <div class="imessage">
+        <p class="msg-time">Terça Feira 11:42 PM</p>
+        <p class="msg-me">Olá</p>
+        <p class="msg-them">Estes são nossos produtos</p>
+        <p class="msg-typing">...</p>
+      </div>
     </main>
     <footer class="footer">
       <p>Todos os direitos resevados</p>
