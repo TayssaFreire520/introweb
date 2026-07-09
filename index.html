@@ -19,7 +19,6 @@
     </header>
     <main id="home">
       <section class="products" id="produtos">
-        <h2>Produtos em Destaque</h2>
         <!--lista de categorias-->
         <aside class="categories">
           <h3>Categorias</h3>
@@ -30,6 +29,41 @@
           </ul>
         </aside>
           <br/>
+
+        <h2>Produtos em Destaque</h2>
+
+        <article>
+          <h3>Notebook</h3>
+          <p>Detalhes do Notebook</p>
+        </article>
+        <article class="product-card">
+          <figure>
+            <img src="./img/Computador Notebook_.jpg"
+            alt="computador notebook preto"
+            width="300"
+            height="300"
+            loading="lazy"
+            class="product-image">
+          </figure>
+        </article>
+
+        <article>
+          <h3>Teclado</h3>
+          <p>Detalhes do Teclado</p>
+          <article class="product-card">
+          <figure>
+            <img src="./img/teclado-pantera-branco.jpg"
+            alt="teclado-pantera-branco"
+            width="300"
+            height="300"
+            loading="lazy"
+            class="product-image">
+          </figure>
+        </article>
+        </article>
+      </section>
+      <br/>
+
         <!--Tabela de produtos-->
         <section class="product-list">
           <h3>Lista de Produtos</h3>
@@ -62,17 +96,17 @@
           </table>
         </section>
 
-        <article>
-          <h3>Notebook</h3>
-          <p>Detalhes do Notebook</p>
-        </article>
-        <article>
-          <h3>Teclado</h3>
-          <p>Detalhes do Teclado</p>
-        </article>
-      </section>
-      <br/>
-
+        <!--conversa com cliente-->
+      <div class="imessage">
+        <p class="msg-time">Terça Feira 11:42 PM</p>
+        <p class="msg-me">Olá</p>
+        <p class="msg-them">Estes são nossos produtos</p>
+        <p class="msg-typing">...</p>
+      </div>
+    </main>
+    <label for="feedback">Deixe seu Comentário</label><br>
+      <textarea id="comentario" name="comentario" rows="4" cols="30" maxlength="150" placeholder="Insira texto aqui:"></textarea>
+      <br/><br/>
       <!--Formulário-->
       <fieldset>
         <legend>Cadastro</legend>
@@ -152,20 +186,22 @@
         <label for="sup">Suporte</label>
       </fieldset>
       <br/> <br/>
-      <label for="feedback">Deixe seu Comentário</label><br>
-      <textarea id="comentario" name="comentario" rows="4" cols="30" maxlength="150" placeholder="Insira texto aqui:"></textarea>
-      <br/><br/>
-
       <input type="submit" value="Enviar" />
 
-      <!--conversa com cliente-->
-      <div class="imessage">
-        <p class="msg-time">Terça Feira 11:42 PM</p>
-        <p class="msg-me">Olá</p>
-        <p class="msg-them">Estes são nossos produtos</p>
-        <p class="msg-typing">...</p>
-      </div>
-    </main>
+    <!--Mapa-->
+    <h1>Localização</h1>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.086890347986!2d-43.19842673468753!3d-22.91016574210969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f0c4e687185%3A0x973c7a140b9b61fa!2sEdif%C3%ADcio%20Eco%20Sapuca%C3%AD!5e0!3m2!1spt-BR!2sbr!4v1783607154892!5m2!1spt-BR!2sbr"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+    ></iframe>
+    <!--para melhor acesso-->
+    <h1>Video para melhor acesso ao local</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/a4cA0ET9DRY?si=EMfLgWBzBDed5cOq&amp;start=11" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <footer class="footer">
       <p>Todos os direitos resevados</p>
     </footer>
