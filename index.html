@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Loja Online</title>
+    <!-- Vinculação do CSS externo -->
+    <link rel="stylesheet" href="index1.css">
   </head>
   <body>
     <!---Cabeçalho-->
@@ -19,6 +21,11 @@
     </header>
     <main id="home">
       <section class="products" id="produtos">
+        <!--Banner-->
+        <section class="banner" aria-label="Destaque principal">
+          <h2>Promoções Imperdíveis</h2>
+          <p>Os melhores produtos com os melhores preços!</p>
+        </section>
         <!--lista de categorias-->
         <aside class="categories">
           <h3>Categorias</h3>
@@ -64,7 +71,70 @@
       </section>
       <br/>
 
-        <!--Tabela de produtos-->
+      <!-- Produtos com imagem -->
+    <section id="produtos">
+    <h2>Nossos Produtos</h2>
+    <article class="product-card">
+    <h3>Smartphone</h3>
+    <img src="img/iphone.jpg" alt="Imagem de um smartphone moderno">
+    <p>Smartphone com alta tecnologia.</p>
+    </article>
+    <article class="product-card">
+    <h3>Camiseta</h3>
+    <img src="img/camisa.jpg" alt="Camiseta casual confortável">
+    <p>Camiseta de algodão premium.</p>
+    </article>
+    </section>
+     <label for="feedback">Deixe seu Comentário</label><br>
+      <textarea id="comentario" name="comentario" rows="4" cols="30" maxlength="150" placeholder="Insira texto aqui:"></textarea>
+      <br/><br/>
+        <br>
+        <label for="check-offers">Receber ofertas</label><br />
+        <input
+          type="checkbox"
+          name="preferences"
+          id="check-newsletter"
+          value="newsletter"
+        />
+        <label for="check-newsletter">Newsletter</label><br />
+        <input type="checkbox" name="preferences" id="check-sup" value="sup" />
+        <label for="sup">Suporte</label>
+      </fieldset>
+      <br/> <br/>
+
+      <input type="submit" value="Enviar" />
+
+      <label for="genero">Selecione o gênero</label><br>
+        <select name="category" id="input-category">
+        <option value="">Selecione...</option>
+        <option value="feminino">F</option>
+        <option value="masculino">M</option>
+      </select>
+
+      </section>
+      </fieldset>
+      <br /><br />
+      <fieldset>
+        <legend></legend>
+        <input type="radio" name="client-type" id="radio-pf" value="pf" />
+        <label for="radio-pf">Pessoa Física</label>
+        <br />
+        <input type="radio" name="client-type" id="radio-pj" value="pj" />
+        <label for="radio-pj">Pessoa Jurídica</label>
+      </fieldset>
+      <br/> <br/>
+      <fieldset>
+        <input
+          type="checkbox"
+          name="preferences"
+          id="check-offers"
+          value="offers"
+        />
+    <!-- Sobre -->
+    <section id="sobre" class="about">
+      <section class="promo-video">
+      <h2>Conheça nossa loja</h2>
+        <!--Tabela de produtos
         <section class="product-list">
           <h3>Lista de Produtos</h3>
 
@@ -95,19 +165,28 @@
             </tbody>
           </table>
         </section>
+    </main> -->
 
-        <!--conversa com cliente-->
-      <div class="imessage">
-        <p class="msg-time">Terça Feira 11:42 PM</p>
-        <p class="msg-me">Olá</p>
-        <p class="msg-them">Estes são nossos produtos</p>
-        <p class="msg-typing">...</p>
-      </div>
-    </main>
-    <label for="feedback">Deixe seu Comentário</label><br>
-      <textarea id="comentario" name="comentario" rows="4" cols="30" maxlength="150" placeholder="Insira texto aqui:"></textarea>
-      <br/><br/>
-      <!--Formulário-->
+    <!--Mapa-->
+    <h1>Localização</h1>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.086890347986!2d-43.19842673468753!3d-22.91016574210969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f0c4e687185%3A0x973c7a140b9b61fa!2sEdif%C3%ADcio%20Eco%20Sapuca%C3%AD!5e0!3m2!1spt-BR!2sbr!4v1783607154892!5m2!1spt-BR!2sbr"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+    ></iframe>
+    <!--para melhor acesso-->
+    <h1>Video para melhor acesso ao local</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/a4cA0ET9DRY?si=EMfLgWBzBDed5cOq&amp;start=11" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h2>Sobre a Loja</h2>
+    <p><b>Somos uma loja dedicada a oferecer produtos de qualidade com os melhores preços.</b></p>
+    </section>
+    <br></br>
+    <!--Formulário-->
       <fieldset>
         <legend>Cadastro</legend>
       <br id="contato">
@@ -146,62 +225,6 @@
         placeholder="Informe sua idade"
         min="18"
         max="120">
-        <br>
-        <label for="genero">Selecione o gênero</label><br>
-        <select name="category" id="input-category">
-        <option value="">Selecione...</option>
-        <option value="moda">F</option>
-        <option value="casa">M</option>
-      </select>
-
-      </section>
-      </fieldset>
-      <br /><br />
-      <fieldset>
-        <legend></legend>
-        <input type="radio" name="client-type" id="radio-pf" value="pf" />
-        <label for="radio-pf">Pessoa Física</label>
-        <br />
-        <input type="radio" name="client-type" id="radio-pj" value="pj" />
-        <label for="radio-pj">Pessoa Jurídica</label>
-      </fieldset>
-      <br/> <br/>
-      <fieldset>
-        <input
-          type="checkbox"
-          name="preferences"
-          id="check-offers"
-          value="offers"
-        />
-
-        <label for="check-offers">Receber ofertas</label><br />
-        <input
-          type="checkbox"
-          name="preferences"
-          id="check-newsletter"
-          value="newsletter"
-        />
-        <label for="check-newsletter">Newsletter</label><br />
-        <input type="checkbox" name="preferences" id="check-sup" value="sup" />
-        <label for="sup">Suporte</label>
-      </fieldset>
-      <br/> <br/>
-      <input type="submit" value="Enviar" />
-
-    <!--Mapa-->
-    <h1>Localização</h1>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.086890347986!2d-43.19842673468753!3d-22.91016574210969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f0c4e687185%3A0x973c7a140b9b61fa!2sEdif%C3%ADcio%20Eco%20Sapuca%C3%AD!5e0!3m2!1spt-BR!2sbr!4v1783607154892!5m2!1spt-BR!2sbr"
-      width="600"
-      height="450"
-      style="border: 0"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="strict-origin-when-cross-origin"
-    ></iframe>
-    <!--para melhor acesso-->
-    <h1>Video para melhor acesso ao local</h1>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/a4cA0ET9DRY?si=EMfLgWBzBDed5cOq&amp;start=11" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <footer class="footer">
       <p>Todos os direitos resevados</p>
     </footer>
