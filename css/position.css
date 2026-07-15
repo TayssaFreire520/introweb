@@ -10,7 +10,8 @@ body{
 }
 
 #geral {
-    width: 900px;
+    width: 650px;
+    height:2500px;
     margin: 30px;
     background-color: bisque;
 }
@@ -25,4 +26,78 @@ body{
 img {
     width: 150px;
     border: 3px solid red;
+}
+
+/*Entendendo position*/
+
+/*controe ps4*/
+
+#img1 {
+    position: static; /*Ignpra parâmentros de movimento
+    top: 100px; /*Não funciona*/
+    left: 100px; /*Não funciona*/
+}
+
+/*psition relative*/
+
+/*livro bluey*/
+/*Position-Relative: A posição do elemento é relativa a sua posição normal.
+Obs:O espaço original ocupado continua ocupado mesmo depois de movimentado para outro lugar*/
+
+#img3 {
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+/*Position-Absolute*/
+
+/*Elemento pai ->Bloco1*/
+#bloco1 {
+    position:relative;
+}
+
+/*Elemento filho -> img2*/
+/*Absolute - a posição do elemento é relativa ao seu elemento pai 
+mais próximo que tenha position diferente de static*/
+/*Obs:O espaço original ocupado fica livre a movimentação*/
+
+/*Câmera instax*/
+#img2{
+    position:absolute;
+    top: 50px;
+    left: 50px;
+}
+
+/*Position Fixed*/
+
+/*Notebook*/
+#img4 {
+    position:fixed;
+    top:50px;
+}
+/*
+---------------------
+Z-INDEX
+---------------------
+*/
+/*Vamos testar o z-index com os blocos 1 e 2*/
+#bloco1 {
+    position:relative;
+}
+
+#bloco2 {
+    position: relative;
+    top: -120px;
+    left: 120;
+}
+
+/*agora sim vamos conhecer o z-index*/
+
+#bloco1 {
+    z-index:2;
+}
+
+#bloco2 {
+    z-index: 1;
 }

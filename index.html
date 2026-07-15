@@ -19,22 +19,13 @@
         </ul>
       </nav>
     </header>
-    <main id="home">
+    <br id="home">
       <section class="products" id="produtos">
         <!--Banner-->
         <section class="banner" aria-label="Destaque principal">
           <h2>Promoções Imperdíveis</h2>
           <p>Os melhores produtos com os melhores preços!</p>
         </section>
-        <!--lista de categorias-->
-        <aside class="categories">
-          <h3>Categorias</h3>
-          <ul>
-            <li>Eletrônicos</li>
-            <li>Roupas</li>
-            <li>Acessórios</li>
-          </ul>
-        </aside>
           <br/>
 
         <h2>Produtos em Destaque</h2>
@@ -71,6 +62,29 @@
       </section>
       <br/>
 
+      <!--lista de categorias-->
+        <aside class="categories">
+          <h2>Categorias</h2>
+          <ul>
+            <li>Eletrônicos</li>
+            <li>Roupas</li>
+            <li>Acessórios</li>
+          </ul>
+        </aside>
+
+      <label for="check-offers"><h2>Receber ofertas:</h2></label>
+        <input
+          type="checkbox"
+          name="preferences"
+          id="check-newsletter"
+          value="newsletter"
+        />
+        <label for="check-newsletter">Newsletter</label><br />
+        <input type="checkbox" name="preferences" id="check-sup" value="sup" />
+        <label for="sup">Suporte</label>
+
+         <input type="submit" value="Enviar" /><br> </br>
+
       <!-- Produtos com imagem -->
     <section id="produtos">
     <h2>Nossos Produtos</h2>
@@ -89,40 +103,12 @@
       <textarea id="comentario" name="comentario" rows="4" cols="30" maxlength="150" placeholder="Insira texto aqui:"></textarea>
       <br/><br/>
         <br>
-        <label for="check-offers">Receber ofertas</label><br />
-        <input
-          type="checkbox"
-          name="preferences"
-          id="check-newsletter"
-          value="newsletter"
-        />
-        <label for="check-newsletter">Newsletter</label><br />
-        <input type="checkbox" name="preferences" id="check-sup" value="sup" />
-        <label for="sup">Suporte</label>
       </fieldset>
       <br/> <br/>
-
-      <input type="submit" value="Enviar" />
-
-      <label for="genero">Selecione o gênero</label><br>
-        <select name="category" id="input-category">
-        <option value="">Selecione...</option>
-        <option value="feminino">F</option>
-        <option value="masculino">M</option>
-      </select>
 
       </section>
       </fieldset>
       <br /><br />
-
-      <fieldset>
-        <legend></legend>
-        <input type="radio" name="client-type" id="radio-pf" value="pf" />
-        <label for="radio-pf">Pessoa Física</label>
-        <br />
-        <input type="radio" name="client-type" id="radio-pj" value="pj" />
-        <label for="radio-pj">Pessoa Jurídica</label>
-      </fieldset>
 
       <br/> <br/>
     <!-- Sobre -->
@@ -181,47 +167,20 @@
     <p><b>Somos uma loja dedicada a oferecer produtos de qualidade com os melhores preços.</b></p>
     </section>
     <br></br>
-    <!--Formulário-->
-      <fieldset>
-        <legend>Cadastro</legend>
-      <br id="contato">
-        <h2>Cadastro/ Contato</h2>
-        <label for="nome">Nome</label><br />
-        <input
-          type="text"
-          name="nome"
-          id="nome"
-          placeholder="Digite o seu nome"
-          required
-          minlength="3">
-          <br>
-        <label for="email">Email</label><br />
-        <input
-          type="text"
-          name="email"
-          id="email"
-          placeholder="Digite o seu email"
-          required
-          minlength="3">
-          <br>
-        <label for="senha">Senha</label><br />
-        <input
-          type="password"
-          name="senha"
-          id="senha"
-          placeholder="Informe a senha"
-          minlength="8">
-          <br />
-      <label for="idade">Idade</label><br />
-      <input
-        type="number"
-        name="idade"
-        id="idade"
-        placeholder="Informe sua idade"
-        min="18"
-        max="120">
-    <footer class="footer">
-      <p>Todos os direitos resevados</p>
+    <!-- Contato -->
+<section id="contato" class="contact">
+<h2>Contato</h2>
+<form aria-label="Formulário de contato">
+<label for="nome">Nome:</label>
+<input type="text" id="nome" required>
+<label for="email">Email:</label>
+<input type="email" id="email" required>
+<button type="submit">Enviar</button>
+</form>
+</section>
+</main>
+<footer>
+<p>&copy; 2026 Minha Loja Online</p>
     </footer>
   </body>
 </html>
